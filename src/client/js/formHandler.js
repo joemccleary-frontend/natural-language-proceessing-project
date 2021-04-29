@@ -7,7 +7,7 @@ function handleSubmit(event) {
        
     if(checkURL(formInput)){
 
-        fetch('/apiPost', {
+        fetch("https://naturallanguageprocessing.netlify.app/apiPost", {
             method: 'POST',
             credentials: "same-origin",
             mode: "cors",
