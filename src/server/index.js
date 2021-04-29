@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 //API call
 const apiKey = process.env.API_KEY;
 //POST request
-app.post("/apiPost", async function(req, res) {
+app.post("https://naturallanguageprocessing.netlify.app/apiPost", async function(req, res) {
     const urlCalled = req.body.formInput;
     const url = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&lang=auto&url=${urlCalled}`
     const getScore = await fetch(url, {
